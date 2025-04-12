@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review Insights Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="header-section">
+    <div class="logo-row">
+      <img src="/static/logo1.png" alt="Logo 1" class="header-logo" />
+      <img src="/static/logo2.png" alt="Logo 2" class="header-logo" />
+    </div>
+    <div class="header-content">
+      <h1>📊 Customer Review Insights</h1>
+      <p>This dashboard lets you upload product reviews, analyze sentiments, explore category summaries, and visualize key insights using interactive AI-powered charts.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>📁 Upload CSV</h2>
+      <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" id="csv-file" accept=".csv" required />
+        <button type="submit">Upload</button>
+      </form>
+      <p class="upload-hint">⚠️ Your CSV must include the following columns: <code>name</code>, <code>categories</code>, <code>reviews.rating</code>, <code>reviews.text</code></p>
+      <div id="upload-result" class="result-box"></div>
+    </section>
+
+    <section class="card">
+      <h2>📝 Review Sentiment Overview</h2>
+      <form id="classification-form">
+        <textarea id="review-input" rows="4" placeholder="Type a review..."></textarea>
+        <button type="submit">Classify</button>
+      </form>
+      <div id="classification-result" class="result-box"></div>
+      <canvas id="sentiment-chart"></canvas>
+      <div class="sample-comments">
+        <h3>Sample Comments</h3>
+        <div id="sample-comments-container"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>📊 Category Summary</h2>
+      <form id="summarization-form">
+        <label for="category-select">Select Category:</label>
+        <select id="category-select"></select>
+        <button type="submit">Summarize</button>
+      </form>
+      <div id="summarization-result" class="result-box"></div>
+    </section>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
