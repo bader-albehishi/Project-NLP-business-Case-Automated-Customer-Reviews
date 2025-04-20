@@ -3,7 +3,15 @@
 ## 🎯 Project Goal
 This project aims to develop a product review system powered by NLP models that aggregate customer feedback from different sources. The key tasks include classifying reviews, clustering product categories, and using generative AI to summarize reviews into recommendation articles.
 
----
+![Screenshot 2025-04-12 184913](https://github.com/user-attachments/assets/32a55e4a-7805-4370-b296-035510418664)
+
+
+
+---![Screenshot 2025-04-12 185401](https://github.com/user-attachments/assets/6ef761eb-ed79-497d-8714-b21ad7ede3ee)
+
+
+![Screenshot 2025-04-12 185517](https://github.com/user-attachments/assets/1c075015-ea3d-4990-97de-d2e6dfb4994b)
+
 
 ## ❓ Problem Statement
 With thousands of reviews available across multiple platforms, manually analyzing them is inefficient. This project seeks to automate the process using NLP models to extract insights and provide users with valuable product recommendations.
